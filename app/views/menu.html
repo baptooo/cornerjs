@@ -1,0 +1,7 @@
+<nav controller="navigationCtrl">
+  <ul>
+    <li repeater="item in items">
+      <a bind-attr="href,item.path" bind="item.name"></a>
+    </li>
+  </ul>
+</nav>

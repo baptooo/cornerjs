@@ -4,8 +4,7 @@ module.exports = function (grunt) {
   grunt.config.set('connect', {
     options: {
       port: 1990,
-      hostname: 'localhost',
-      keepalive: true
+      hostname: 'localhost'
     },
     dev: {
       options: {

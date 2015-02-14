@@ -14,7 +14,8 @@
   ],
   "dependencies": {
     "cornerjs": "https://github.com/Jabher/cornerjs.git",
-    "normalize.css": "~3.0.2"
+    "normalize.css": "~3.0.2",
+    "bluebird": "~2.9.9"
   },
   "overrides": {
     "cornerjs": {

@@ -1,0 +1,8 @@
+.my-field {
+  outline: none;
+
+  &.dirty {
+    border: 1px solid red;
+    outline: none;
+  }
+}

@@ -6,26 +6,35 @@
   <!--bower:css-->
   <link rel="stylesheet" href="vendor/normalize.css/normalize.css" />
   <!--endbower-->
+
+  <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
   <!--bower:js-->
   <script src="vendor/cornerjs/build/corner.js"></script>
+  <script src="vendor/bluebird/js/browser/bluebird.js"></script>
   <!--endbower-->
 
   <section class="articles" controller="articleCtrl">
     <h2 bind="title"></h2>
-    <ul>
-      <li repeater="data">
-        Repeater
+
+    <ul if="data">
+      <li repeater="item in data">
+        Repeater: <span bind="item"></span>
       </li>
     </ul>
+
+    <article bind="lorem"></article>
     <button click="callService()">Do it</button>
   </section>
+
+  <section require="'views/menu.html'"></section>
 
   <!-- Core -->
   <script src="scripts/core/core.js"></script>
 
   <!-- App -->
   <script src="scripts/controllers/article.js"></script>
+  <script src="scripts/controllers/navigation.js"></script>
 </body>
 </html>

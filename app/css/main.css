@@ -1,0 +1,7 @@
+.my-field {
+  outline: none; }
+  .my-field.dirty {
+    border: 1px solid red;
+    outline: none; }
+
+/*# sourceMappingURL=main.css.map */

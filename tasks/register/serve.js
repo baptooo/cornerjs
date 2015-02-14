@@ -2,7 +2,8 @@
 
 module.exports = function (grunt) {
   grunt.registerTask('serve', [
-    'wiredep:dev',
-    'connect:dev'
+    'build',
+    'connect:dev',
+    'watch'
   ]);
 };
